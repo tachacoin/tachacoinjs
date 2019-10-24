@@ -1,7 +1,7 @@
 pragma solidity ^0.5.8;
 
 // Related to: LogOfDependantContract.sol
-// https://github.com/tachacoin/qtumjs/issues/4
+// https://github.com/tachacoin/tachacoinjs/issues/4
 
 contract LogOfDependantContractChild {
   event LogOfDependantContractChildEvent(string data);

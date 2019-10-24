@@ -2,7 +2,7 @@ import { assert } from "chai"
 
 import { TachacoinRPC } from "../TachacoinRPC"
 
-export const rpcURL = process.env.TACHACOIN_RPC || "http://qtum:test@localhost:45561"
+export const rpcURL = process.env.TACHACOIN_RPC || "http://tachacoin:test@localhost:45561"
 
 export const rpc = new TachacoinRPC(rpcURL)
 

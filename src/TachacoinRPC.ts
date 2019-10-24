@@ -162,7 +162,7 @@ export interface IRPCGetTransactionReceiptRequest {
 }
 
 /**
- * Transaction receipt returned by qtumd
+ * Transaction receipt returned by tachacoind
  */
 export interface IRPCGetTransactionReceiptBase {
   blockHash: string
@@ -225,7 +225,7 @@ export interface ILogFilter {
 }
 
 /**
- * The raw log data returned by qtumd, not ABI decoded.
+ * The raw log data returned by tachacoind, not ABI decoded.
  */
 export interface ILogEntry extends IRPCGetTransactionReceiptBase {
   /**

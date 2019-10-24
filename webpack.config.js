@@ -18,7 +18,7 @@ module.exports = {
     extensions: [".ts", ".js"]
   },
   output: {
-    filename: "qtum.js",
+    filename: "tachacoin.js",
     path: path.resolve(__dirname, "dist"),
     library: "Tachacoin",
     libraryTarget: "umd"

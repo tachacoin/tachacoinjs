@@ -1,5 +1,5 @@
 {
-  "name": "qtumjs",
+  "name": "tachacoinjs",
   "version": "1.9.3",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -11,7 +11,7 @@
     "lint": "tslint  --project tsconfig.json",
     "build:umd": "webpack --config webpack.config.js"
   },
-  "npmName": "qtumjs",
+  "npmName": "tachacoinjs",
   "npmFileMap": [
     {
       "basePath": "/dist/",
@@ -24,7 +24,7 @@
     "axios": "^0.18.1",
     "btoa": "^1.1.2",
     "eventemitter3": "^2.0.3",
-    "qtumjs-ethjs-abi": "^1.0.3",
+    "tachacoinjs-ethjs-abi": "^1.0.3",
     "url-parse": "^1.4.7"
   },
   "devDependencies": {

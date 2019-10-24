@@ -1,26 +1,26 @@
 The TACHACOIN JavaScript library for Smart Contract development.
 
-See [documentation](https://tachacoin.github.io/qtumjs-doc/).
+See [documentation](https://tachacoin.github.io/tachacoinjs-doc/).
 
-See [中文 API 文档](https://tachacoin.github.io/qtumjs-doc-cn/).
+See [中文 API 文档](https://tachacoin.github.io/tachacoinjs-doc-cn/).
 
-See [companion tutorial](https://github.com/tachacoin/qtumbook/blob/master/en/part2/erc20-js.md).
+See [companion tutorial](https://github.com/tachacoin/tachacoinbook/blob/master/en/part2/erc20-js.md).
 
 # Install
 
 ```
-npm install qtumjs
+npm install tachacoinjs
 ```
 
 This is a sample code snippet that transfer ERC20 tokens:
 
 ```js
-import { TachacoinRPC } from "qtumjs"
+import { TachacoinRPC } from "tachacoinjs"
 
 const repoData = require("./solar.json")
-const qtum = new Tachacoin("http://qtum:test@localhost:45551", repoData)
+const tachacoin = new Tachacoin("http://tachacoin:test@localhost:45551", repoData)
 
-const myToken = qtum.contract(
+const myToken = tachacoin.contract(
   "zeppelin-solidity/contracts/token/CappedToken.sol",
 )
 
@@ -37,7 +37,7 @@ async function transfer(fromAddr, toAddr, amount) {
 }
 ```
 
-The [full source code](https://github.com/tachacoin/qtumbook-mytoken-qtumjs-cli).
+The [full source code](https://github.com/tachacoin/tachacoinbook-mytoken-tachacoinjs-cli).
 
 > This example uses async/await (supported natively by Node 8+).
 
@@ -45,10 +45,10 @@ The [full source code](https://github.com/tachacoin/qtumbook-mytoken-qtumjs-cli)
 
 ```
 docker run -it --rm \
-  --name qtumjs \
+  --name tachacoinjs \
   -v `pwd`:/dapp \
   -p 45551:45551 \
-  hayeah/qtumportal
+  hayeah/tachacoinportal
 ```
 
 Configure TACHACOIN_RPC for deployment tool:
@@ -56,7 +56,7 @@ Configure TACHACOIN_RPC for deployment tool:
 Enter into container:
 
 ```
-docker exec -it qtumjs sh
+docker exec -it tachacoinjs sh
 ```
 
 Generate initial blocks:
@@ -73,7 +73,7 @@ qcli getbalance
 Deploy test contracts:
 
 ```
-export TACHACOIN_RPC=http://qtum:test@localhost:45551
+export TACHACOIN_RPC=http://tachacoin:test@localhost:45551
 export TACHACOIN_SENDER=TF4HfDn3GVEceES5GEe6mavvyVuyW1nqrr
 
 sh deploy-test-contracts.sh

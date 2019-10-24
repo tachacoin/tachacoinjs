@@ -10,7 +10,7 @@ const {
   encodeMethod,
   logDecoder,
   configure: configureABI,
-} = require("qtumjs-ethjs-abi") as IETHABI
+} = require("tachacoinjs-ethjs-abi") as IETHABI
 
 configureABI({ noHexStringPrefix: true })
 

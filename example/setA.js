@@ -1,4 +1,4 @@
-const { Contract, TachacoinRPC } = require("qtumjs")
+const { Contract, TachacoinRPC } = require("tachacoinjs")
 
 const rpc = new TachacoinRPC("http://howard:yeh@localhost:45561")
 

@@ -3,7 +3,7 @@ import { EventEmitter } from "eventemitter3"
 
 const {
   logDecoder,
-} = require("qtumjs-ethjs-abi") as IETHABI
+} = require("tachacoinjs-ethjs-abi") as IETHABI
 
 import {
   decodeOutputs,
@@ -281,7 +281,7 @@ export class Contract {
   }
 
   /**
-   * Executes contract method on your own local qtumd node as a "simulation"
+   * Executes contract method on your own local tachacoind node as a "simulation"
    * using `callcontract`. It is free, and does not actually modify the
    * blockchain.
    *
@@ -402,7 +402,7 @@ export class Contract {
       base = targetBase
     } else {
       switch (targetBase) {
-        case "qtum":
+        case "tachacoin":
         case "btc":
           base = 0
           break

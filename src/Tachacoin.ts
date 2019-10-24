@@ -3,9 +3,9 @@ import { IContractsRepoData, ContractsRepo } from "./ContractsRepo"
 import { Contract } from "./Contract"
 
 /**
- * The `Tachacoin` class is an instance of the `qtumjs` API.
+ * The `Tachacoin` class is an instance of the `tachacoinjs` API.
  *
- * @param providerURL URL of the qtumd RPC service.
+ * @param providerURL URL of the tachacoind RPC service.
  * @param repoData Information about Solidity contracts.
  */
 export class Tachacoin extends TachacoinRPC {
