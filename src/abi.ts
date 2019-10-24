@@ -16,7 +16,7 @@ configureABI({ noHexStringPrefix: true })
 
 import {
   ITransactionLog,
-} from "./QtumRPC"
+} from "./TachacoinRPC"
 
 export function encodeInputs(method: IABIMethod, args: any[] = []): string {
   const calldata = encodeMethod(method, args)

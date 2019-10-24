@@ -1,4 +1,4 @@
-import { QtumRPCRaw } from "./QtumRPCRaw"
+import { TachacoinRPCRaw } from "./TachacoinRPCRaw"
 
 export interface IGetInfoResult {
   version: number,
@@ -35,7 +35,7 @@ export interface IRPCSendToContractRequest {
   datahex: string
 
   /**
-   * The amount in QTUM to send. eg 0.1, default: 0
+   * The amount in TACHACOIN to send. eg 0.1, default: 0
    */
   amount?: number | string
 
@@ -45,12 +45,12 @@ export interface IRPCSendToContractRequest {
   gasLimit?: number
 
   /**
-   * Qtum price per gas unit, default: 0.00000001, min:0.00000001
+   * Tachacoin price per gas unit, default: 0.00000001, min:0.00000001
    */
   gasPrice?: number | string
 
   /**
-   * The quantum address that will be used as sender.
+   * The tacha address that will be used as sender.
    */
   senderAddress?: string
 
@@ -66,7 +66,7 @@ export interface IRPCSendToContractResult {
    */
   txid: string,
   /**
-   * QTUM address of the sender.
+   * TACHACOIN address of the sender.
    */
   sender: string,
   /**
@@ -282,7 +282,7 @@ export interface IPromiseCancel<T> extends Promise<T> {
   cancel: () => void
 }
 
-export class QtumRPC extends QtumRPCRaw {
+export class TachacoinRPC extends TachacoinRPCRaw {
   private _hasTxWaitSupport: boolean | undefined
 
   public getInfo(): Promise<IGetInfoResult> {

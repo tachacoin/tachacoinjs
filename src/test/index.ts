@@ -1,10 +1,10 @@
 import { assert } from "chai"
 
-import { QtumRPC } from "../QtumRPC"
+import { TachacoinRPC } from "../TachacoinRPC"
 
-export const rpcURL = process.env.QTUM_RPC || "http://qtum:test@localhost:3889"
+export const rpcURL = process.env.TACHACOIN_RPC || "http://qtum:test@localhost:45561"
 
-export const rpc = new QtumRPC(rpcURL)
+export const rpc = new TachacoinRPC(rpcURL)
 
 export const repoData = require("../../solar.development.json")
 

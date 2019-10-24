@@ -21,7 +21,7 @@ export interface IRPCCallOption {
   cancelToken?: CancelToken,
 }
 
-export class QtumRPCRaw {
+export class TachacoinRPCRaw {
   private idNonce: number
   private _api: AxiosInstance
 

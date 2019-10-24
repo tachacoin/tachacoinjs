@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: "qtum.js",
     path: path.resolve(__dirname, "dist"),
-    library: "Qtum",
+    library: "Tachacoin",
     libraryTarget: "umd"
   }
 };

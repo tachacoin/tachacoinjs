@@ -1,14 +1,14 @@
-import { QtumRPC } from "./QtumRPC"
+import { TachacoinRPC } from "./TachacoinRPC"
 import { IContractsRepoData, ContractsRepo } from "./ContractsRepo"
 import { Contract } from "./Contract"
 
 /**
- * The `Qtum` class is an instance of the `qtumjs` API.
+ * The `Tachacoin` class is an instance of the `qtumjs` API.
  *
  * @param providerURL URL of the qtumd RPC service.
  * @param repoData Information about Solidity contracts.
  */
-export class Qtum extends QtumRPC {
+export class Tachacoin extends TachacoinRPC {
   private repo: ContractsRepo
 
   constructor(providerURL: string, repoData?: IContractsRepoData) {

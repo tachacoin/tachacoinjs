@@ -3,11 +3,11 @@ import "mocha"
 import { assert } from "chai"
 
 import { rpcURL, repoData } from "./test"
-import { Qtum } from "./Qtum"
+import { Tachacoin } from "./Tachacoin"
 import { Contract } from "./Contract"
 
-describe("Qtum", () => {
-  const qtum = new Qtum(rpcURL, repoData)
+describe("Tachacoin", () => {
+  const qtum = new Tachacoin(rpcURL, repoData)
 
   it("can instantiate a contract", () => {
     const contract = qtum.contract("test/contracts/Methods.sol")
